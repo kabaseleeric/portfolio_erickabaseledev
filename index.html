@@ -5,33 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
 </head>
-<body>
-    <header class="banner" id="banner">
-        <div class="nav-bar">
-            <a href="#"><img src="images/logo.png" alt="logo"></a>
-            <img src="images/toggle.svg" alt="toggle" class="toggle" id="toggle">
-                <ul class="dropdown">
-                    <img src="images/close.svg" alt="close toggle" class="close">
-                    <li><a href="#banner">Accueil</a></li>
-                    <li><a href="#about">Apropos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#realisations">Réalisations</a></li>
-                </ul>
+<body class="container-fluid">
+        <header class="banner row" id="banner">
+            <div class="nav-bar">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+                <img src="images/toggle.svg" alt="toggle" class="toggle" id="toggle">
+                    <ul class="dropdown">
+                        <img src="images/close.svg" alt="close toggle" class="close">
+                        <li><a href="#banner">Accueil</a></li>
+                        <li><a href="#about">Apropos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#realisations">Réalisations</a></li>
+                    </ul>
 
-                <ul>
-                    <li><a href="#banner">Accueil</a></li>
-                    <li><a href="#about">Apropos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#realisations">Réalisations</a></li>
-                </ul>
-        </div>
-         <p>je suis un <strong>developpeur web</strong></p>
-    </header>
-    <div class="about" id="about">    
+                    <ul>
+                        <li><a href="#banner">Accueil</a></li>
+                        <li><a href="#about">Apropos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#realisations">Réalisations</a></li>
+                    </ul>
+            </div>
+            <p class="text-center">je suis un <strong>developpeur web</strong></p>
+        </header>
+    
+    <div class="about row" id="about">    
             
-        <div class="infos">
+        <div class="infos col-sm-12 col-md-6 col-lg-5">
             <h2 class="title"><span>Apro</span>pos</h2>
             <p class="name"><span class="name-blod">KABA</span> <span class="name-emphasis">DEV</span>, Developpeur web</p>
             <p class="description">
@@ -52,10 +53,13 @@
                 <li><i>Téléphone:  +243 975 805 926</i></li>
             </ul>
         </div>
-        <img src="images/ERIC-11.png" alt="profil">
+        <div class=" images col-sm-12 col-md-6 col-lg-5">
+            <img src="images/ERIC-11.png" alt="profil">
+        </div>
+        
     </div>
 
-    <div class="skills" id="skills">
+    <div class="skills row" id="skills">
         <div class="content-text">
             <h2 class="title">Mes co<span>mpé</span>tences</h2>
             <p>commodo viverra maecenas accumsan lacus vel facilisis.</p>
@@ -91,17 +95,17 @@
             </div>
         </div>
     </div>
-    <div class="realisations" id="realisations">
+    <div class="realisations row" id="realisations">
         <div class="content-text">
             <h2 class="title">Mes r<span>éalis</span>ations</h2>
             <p>commodo viverra maecenas accumsan lacus vel facilisis.</p>
         </div>
         <div class="content-reals">
-            <!---->
+           
             <div class="child-content-real">
                 <a href="images/realisations/porfolio_perso.png" class="child-real-lien">
                     <img src="images/realisations/porfolio_perso.png" alt="Calque-11">
-                    <div class="hover-touch">voir les interfaces</div>   
+                  <!--<div class="hover-touch">voir les interfaces</div> -->     
                 </a>
                 <h3>site web portfolio personnel</h3>
                 <p>Développement d'un site web portfolio pour moi-même.</p>
@@ -116,7 +120,7 @@
             <div class="child-content-real">
                 <a href="images/realisations/projet_pharmakina.png" class="child-real-lien">
                     <img src="images/realisations/projet_pharmakina.png" alt="Calque-11">
-                    <div class="hover-touch">voir les interfaces</div>   
+                    <!--<div class="hover-touch">voir les interfaces</div> -->     
                 </a>
                 <h3>Application de vente en ligne</h3>
                 <p>il s'agit d'une application de vente en ligne pour une entreprise pharmaceutique situé à Rd Congo.</p>
@@ -131,8 +135,7 @@
             <div class="child-content-real">
                 <a href="images/realisations/portfolio_kabadesign.png" class="child-real-lien">
                     <img src="images/realisations/portfolio_kabadesign.png" alt="Calque-11">
-                    <div class="hover-touch">voir les interfaces</div>   
-                </a>
+                    <!--<div class="hover-touch">voir les interfaces</div> -->                  </a>
                 <h3>site web portfolio pour designer graphique</h3>
                 <p>Développement d'un site web portfolio qui met en avance les services et compétences d'un graphiste designer.</p>
                 <h4>Développé avec:</h4>
@@ -146,8 +149,7 @@
             <div class="child-content-real">
                 <a href="images/realisations/Calque-11.png" class="child-real-lien">
                     <img src="images/realisations/Calque-11.png" alt="Calque-11">
-                    <div class="hover-touch">voir les interfaces</div>   
-                </a>
+                    <!--<div class="hover-touch">voir les interfaces</div> -->                  </a>
                 <h3>site web portfolio</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit adipisicing elit.</p>
                 <h4>technos utilisées:</h4>
@@ -164,11 +166,11 @@
         </div>
     </div> 
     
-    <div class="footer">
+    <div class="footer row">
         <div class="copyright">
-            <p><span>&copy;</span>2025 Kaba Dev || Tout droits réservés.</p>
+            <p class="text-center"><span>&copy;</span>2025 Kaba Dev || Tout droits réservés.</p>
         </div>
-        <div class="social-media">
+        <div class="social-media col-lg-12">
             <ul>
                 <li><a href="">Facebook</a></li>
                 <li><a href="">Twitter</a></li>

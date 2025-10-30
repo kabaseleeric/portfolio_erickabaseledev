@@ -122,7 +122,7 @@ body{
 }
 
 .about .infos .description{
-    padding-right: 250px;
+    padding-right: 50px;
     padding-bottom: 30px;
 }
 
@@ -271,6 +271,11 @@ body{
     text-align: center;
 }
 
+.realisations .content-reals .child-content-real h4{
+    font-size: 1.0em;
+    text-align: center;
+}
+
 .realisations .content-reals .child-content-real p{
     font-size: 0.9em;
     text-align: center;
@@ -293,9 +298,9 @@ body{
 .realisations .content-reals .child-real-lien .hover-touch{
     background-color: #28282870;
     position: absolute;
-    top: 1;
+    top: 3px;
     left: 0;
-    right: 0;
+    right: 30px;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -338,6 +343,10 @@ body{
 .footer .copyright p span{
     font-size: 1.0em;
     font-weight: 700;
+}
+
+.footer .social-media{
+    padding-left:475px;
 }
 
 .footer .social-media ul{
