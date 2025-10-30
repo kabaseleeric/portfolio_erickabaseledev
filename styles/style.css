@@ -251,8 +251,40 @@ body{
 .realisations .content-reals{
     width: 80%;
     margin-left: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
+.realisations .content-reals .child-content-real{
+    background-color: var(--color-quaternary);
+    width: 220px;
+    border-radius: 10px;
+}
+
+.realisations .content-reals .child-content-real:hover{
+    box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.realisations .content-reals .child-content-real h3,h4{
+    font-size: 1.0em;
+    text-align: center;
+}
+
+.realisations .content-reals .child-content-real p{
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px;
+}
+
+.realisations .content-reals .child-content-real ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.realisations .content-reals .child-content-real ul li{
+    text-align: center;
+}
 .realisations .content-reals  .child-real-lien{
     position: relative;
     text-decoration: none;
@@ -340,7 +372,7 @@ body{
                     Responsive design
 ***********************************************************/
 
-@media (max-width:768px){
+@media (max-width:768px ){
     .banner .nav-bar ul{
         display: none;
     }
