@@ -3,189 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
+    <title>KabaDev-portfolio</title>
+    <link rel="shortcut icon" type="image/icon" href="images/logo.png"/>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/">
 </head>
 <body class="container-fluid">
-        <header class="banner row" id="banner">
-            <div class="nav-bar">
-                <a href="#"><img src="images/logo.png" alt="logo"></a>
-                <img src="images/toggle.svg" alt="toggle" class="toggle" id="toggle">
-                    <ul class="dropdown">
-                        <img src="images/close.svg" alt="close toggle" class="close">
-                        <li><a href="#banner">Accueil</a></li>
-                        <li><a href="#about">Apropos</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#realisations">Réalisations</a></li>
-                    </ul>
 
-                    <ul>
-                        <li><a href="#banner">Accueil</a></li>
-                        <li><a href="#about">Apropos</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#realisations">Réalisations</a></li>
-                    </ul>
+    <!-- navigation bar -->
+            <div class="nav-bar navbar navbar-expand-lg">
+                <div class="container">  
+                    <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
+                        <!--<img src="images/toggle.svg" alt="toggle" class="toggle" id="toggle">-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                        <span><img src="images/toggle.svg" alt=""></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class=" navbar-nav ms-auto">
+                            <li class="navbar-item text-center "><a href="#banner" class="nav-link text-white">Accueil</a></li>
+                            <li class="navbar-item text-center "><a href="#about" class="nav-link text-white">Apropos</a></li>
+                            <li class="navbar-item text-center "><a href="#skills" class="nav-link text-white">Compétences</a></li>
+                            <li class="navbar-item text-center "><a href="#realisations" class="nav-link text-white">Réalisations</a></li>
+                        </ul>
+                    </div>        
+                </div>  
             </div>
-            <p class="text-center">je suis un <strong>developpeur web</strong></p>
-        </header>
-    
-    <div class="about row" id="about">    
-            
-        <div class="infos col-sm-12 col-md-6 col-lg-5">
-            <h2 class="title"><span>Apro</span>pos</h2>
-            <p class="name"><span class="name-blod">KABA</span> <span class="name-emphasis">DEV</span>, Developpeur web</p>
-            <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ut, repudiandae. Deleniti omnis reprehenderit explicabo doloremque ea eligendi, 
-                tempore voluptas aperiam sed iusto itaque inventore ducimus. 
-                Esse ipsam unde enim quibusdam?
-                <span id="readmore">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ut, repudiandae. Deleniti omnis reprehenderit explicabo doloremque ea eligendi, 
-                tempore voluptas aperiam sed iusto itaque inventore ducimus. 
-                Esse ipsam unde enim quibusdam? 
-                </span><span id="btn-readmore"></span>
-            </p>
-            <ul>
-                <li><i>Nom: KABA DEV</i></li>
-                <li><i>Email:  <a href="erickabasele03@gmail.com">erickabasele03@gmail.com</a></i></li>
-                <li><i>Téléphone:  +243 975 805 926</i></li>
-            </ul>
-        </div>
-        <div class=" images col-sm-12 col-md-6 col-lg-5">
-            <img src="images/ERIC-11.png" alt="profil">
+    <!--End navigation bar -->
+
+    <!-- main container -->
+     <div class="container-fluid">
+        <!-- banner -->
+        <div class="row">
+            <section class="banner" id="banner">              
+                <p class="text-center">Salut ! c'est <span>é</span>ric,<br> je suis <strong>developpeur web</strong></p>
+                <a href="#" class="btn btn-primary">Télécharger mon cv</a>
+            </section>
         </div>
         
-    </div>
 
-    <div class="skills row" id="skills">
-        <div class="content-text">
-            <h2 class="title">Mes co<span>mpé</span>tences</h2>
-            <p>commodo viverra maecenas accumsan lacus vel facilisis.</p>
+        <!-- about -->
+        <div class="row">
+            <section class="about" id="about">
+                <div class="row">
+                    <div class="infos col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                        <h2 class="title"><span>Apro</span>pos</h2>
+                        <p class="name"><span class="name-blod">KABA</span> <span class="name-emphasis">DEV</span>, Developpeur web</p>
+                        <p class="text-muted text-wrap p-6">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ut, repudiandae. Deleniti omnis reprehenderit explicabo doloremque ea eligendi, 
+                            tempore voluptas aperiam sed iusto itaque inventore ducimus. 
+                            Esse ipsam unde enim quibusdam?
+                            <span id="readmore">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ut, repudiandae. Deleniti omnis reprehenderit explicabo doloremque ea eligendi, 
+                            tempore voluptas aperiam sed iusto itaque inventore ducimus. 
+                            Esse ipsam unde enim quibusdam? 
+                            </span><span id="btn-readmore"></span>
+                        </p>
+                        <ul>
+                            <li><i>Nom: KABA DEV</i></li>
+                            <li><i>Email:  <a href="erickabasele03@gmail.com">erickabasele03@gmail.com</a></i></li>
+                            <li><i>Téléphone:  +243 975 805 926</i></li>
+                        </ul>
+                    </div>
+                    <div class="images col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                        <img src="images/ERIC-11.png" alt="profil" class="img-fluid">
+                    </div>
+                </div>        
+            </section>
         </div>
-        <div class="content-graphics">
-            <div class="blod-child">
-                <span class="pourcentage">90%</span>
-                <div class="bloc-bar">
-                    <p>HTML & CSS</p>
-                    <progress value="90" max="100"></progress>
+        
+        <!-- skills -->
+        <div class="row">
+                <section class="skills" id="skills">
+                    <div class="content-text">
+                        <h2 class="title">Mes co<span>mpé</span>tences</h2>
+                        <p>commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="content-graphics">
+                                <div class="col-xs-6 ">
+                                    <div class="blod-child flex-wrap-wrap">
+                                        <span class="pourcentage">90%</span>
+                                        <div class="bloc-bar">
+                                            <p>HTML & CSS</p>
+                                            <progress value="90" max="100"></progress>
+                                        </div>
+                                    </div>
+                                    <div class="blod-child">
+                                        <span class="pourcentage">80%</span>
+                                        <div class="bloc-bar">
+                                            <p>JavaScript, PHP</p>
+                                            <progress value="80" max="100"></progress>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <div class="blod-child">
+                                        <span class="pourcentage">85%</span>
+                                        <div class="bloc-bar">
+                                            <p>A. Photoshop, Illustrator</p>
+                                            <progress value="85" max="100"></progress>
+                                        </div>
+                                    </div>
+                                    <div class="blod-child">
+                                        <span class="pourcentage">97%</span>
+                                        <div class="bloc-bar">
+                                            <p>Git & GitHub, Vs Code</p>
+                                            <progress value="97" max="100"></progress>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        
+
+        <!-- realisations -->
+        <div class="row">
+            <section class="realisations" id="realisations">
+                <div class="content-text">
+                    <h2 class="title">Mes r<span>éalis</span>ations</h2>
+                    <p>commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 </div>
-            </div>
-            <div class="blod-child">
-                <span class="pourcentage">80%</span>
-                <div class="bloc-bar">
-                    <p>JavaScript, PHP</p>
-                    <progress value="80" max="100"></progress>
+                <div class="content-reals">
+                    <div class="child-content-real">
+                        <a href="images/realisations/porfolio_perso.png" class="child-real-lien">
+                            <img src="images/realisations/porfolio_perso.png" alt="Calque-11">
+                        <!--<div class="hover-touch">voir les interfaces</div> -->     
+                        </a>
+                        <h3>site web portfolio personnel</h3>
+                        <p>Développement d'un site web portfolio pour moi-même.</p>
+                        <h4>Développé avec :</h4>
+                        <ul class="see-more">
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git & GitHub</li>
+                            <li>Liens demo/ GitHub : <a href="#">cliquez ici pour voir la demo</a></li>
+                        </ul> 
+                        <span class="btn-seemore"></span>
+                    </div>
+                    <div class="child-content-real">
+                        <a href="images/realisations/projet_pharmakina.png" class="child-real-lien">
+                            <img src="images/realisations/projet_pharmakina.png" alt="Calque-11">
+                            <!--<div class="hover-touch">voir les interfaces</div> -->     
+                        </a>
+                        <h3>Application de vente en ligne</h3>
+                        <p>il s'agit d'une application de vente en ligne pour une entreprise pharmaceutique situé à Rd Congo.</p>
+                        <h4>Développé avec :</h4>
+                        <ul class="see-more">
+                            <li>HTML & CSS</li>
+                            <li>PHP Native</li>
+                            <li>Git & GitHub</li>
+                            <li>Liens demo/ GitHub : <a href="#">cliquez ici pour voir la demo</a></li>
+                        </ul> 
+                        <span class="btn-seemore"></span>
+                    </div>
+                    <div class="child-content-real">
+                        <a href="images/realisations/portfolio_kabadesign.png" class="child-real-lien">
+                            <img src="images/realisations/portfolio_kabadesign.png" alt="Calque-11">
+                            <!--<div class="hover-touch">voir les interfaces</div> -->                  </a>
+                        <h3>site web portfolio pour designer graphique</h3>
+                        <p>Développement d'un site web portfolio qui met en avance les services et compétences d'un graphiste designer.</p>
+                        <h4>Développé avec:</h4>
+                        <ul class="see-more">
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git & GitHub</li>
+                            <li>Liens demo/ GitHub : <a href="#">cliquez ici pour voir la demo</a></li>
+                        </ul> 
+                        <span class="btn-seemore"></span>
+                    </div>
+                    <div class="child-content-real">
+                        <a href="images/realisations/Calque-11.png" class="child-real-lien">
+                            <img src="images/realisations/Calque-11.png" alt="Calque-11">
+                            <!--<div class="hover-touch">voir les interfaces</div> -->                  </a>
+                        <h3>site web portfolio</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit adipisicing elit.</p>
+                        <h4>technos utilisées:</h4>
+                        <ul class="see-more">
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git & GitHub</li>
+                            <li>Liens demo/ GitHub : <a href="#">cliquez ici pour voir la demo</a></li>
+                        </ul> 
+                        <span class="btn-seemore"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="blod-child">
-                <span class="pourcentage">85%</span>
-                <div class="bloc-bar">
-                    <p>A. Photoshop, Illustrator</p>
-                    <progress value="85" max="100"></progress>
+            </section>
+        </div> 
+        
+
+        <!--footer -->
+        <div class="row">
+            <div class="footer">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="copyright">
+                            <p class="text-center"><span>&copy;</span>2025 Kaba Dev || Tout droits réservés.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="social-media">
+                            <ul class="justify-content-center">
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Twitter</a></li>
+                                <li><a href="">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
+                
             </div>
-            <div class="blod-child">
-                <span class="pourcentage">97%</span>
-                <div class="bloc-bar">
-                    <p>Git & GitHub, Vs Code</p>
-                    <progress value="97" max="100"></progress>
-                </div>
-            </div>
+        </div>
+        
+        <div class="scroll" id="scroll">
+            <img src="images/Fichier 10.svg" alt="scroll">
         </div>
     </div>
-    <div class="realisations row" id="realisations">
-        <div class="content-text">
-            <h2 class="title">Mes r<span>éalis</span>ations</h2>
-            <p>commodo viverra maecenas accumsan lacus vel facilisis.</p>
-        </div>
-        <div class="content-reals">
-           
-            <div class="child-content-real">
-                <a href="images/realisations/porfolio_perso.png" class="child-real-lien">
-                    <img src="images/realisations/porfolio_perso.png" alt="Calque-11">
-                  <!--<div class="hover-touch">voir les interfaces</div> -->     
-                </a>
-                <h3>site web portfolio personnel</h3>
-                <p>Développement d'un site web portfolio pour moi-même.</p>
-                <h4>Développé avec :</h4>
-                <ul class="see-more">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git & GitHub</li>
-                    <li>Liens demo/ GitHub : <a href="#">cliquez ici pour voir la demo</a></li>
-                </ul> 
-                <span class="btn-seemore"></span>
-            </div>
-            <div class="child-content-real">
-                <a href="images/realisations/projet_pharmakina.png" class="child-real-lien">
-                    <img src="images/realisations/projet_pharmakina.png" alt="Calque-11">
-                    <!--<div class="hover-touch">voir les interfaces</div> -->     
-                </a>
-                <h3>Application de vente en ligne</h3>
-                <p>il s'agit d'une application de vente en ligne pour une entreprise pharmaceutique situé à Rd Congo.</p>
-                <h4>Développé avec :</h4>
-                <ul class="see-more">
-                    <li>HTML & CSS</li>
-                    <li>PHP Native</li>
-                    <li>Git & GitHub</li>
-                    <li>Liens demo/ GitHub : <a href="#">cliquez ici pour voir la demo</a></li>
-                </ul> 
-                <span class="btn-seemore"></span>
-            </div>
-            <div class="child-content-real">
-                <a href="images/realisations/portfolio_kabadesign.png" class="child-real-lien">
-                    <img src="images/realisations/portfolio_kabadesign.png" alt="Calque-11">
-                    <!--<div class="hover-touch">voir les interfaces</div> -->                  </a>
-                <h3>site web portfolio pour designer graphique</h3>
-                <p>Développement d'un site web portfolio qui met en avance les services et compétences d'un graphiste designer.</p>
-                <h4>Développé avec:</h4>
-                <ul class="see-more">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git & GitHub</li>
-                    <li>Liens demo/ GitHub : <a href="#">cliquez ici pour voir la demo</a></li>
-                </ul> 
-                <span class="btn-seemore"></span>
-            </div>
-            <div class="child-content-real">
-                <a href="images/realisations/Calque-11.png" class="child-real-lien">
-                    <img src="images/realisations/Calque-11.png" alt="Calque-11">
-                    <!--<div class="hover-touch">voir les interfaces</div> -->                  </a>
-                <h3>site web portfolio</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit adipisicing elit.</p>
-                <h4>technos utilisées:</h4>
-                <ul class="see-more">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git & GitHub</li>
-                    <li>Liens demo/ GitHub : <a href="#">cliquez ici pour voir la demo</a></li>
-                </ul> 
-                <span class="btn-seemore"></span>
-            </div>
-            
-            
-        </div>
-    </div> 
-    
-    <div class="footer row">
-        <div class="copyright">
-            <p class="text-center"><span>&copy;</span>2025 Kaba Dev || Tout droits réservés.</p>
-        </div>
-        <div class="social-media col-lg-12">
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Instagram</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="scroll" id="scroll">
-        <img src="images/Fichier 10.svg" alt="scroll">
-    </div>
-    
-       
-    <script src="scripts/script.js"></script>
+    <!-- End main container -->
+
+<!-- link js -->    
+<script src="scripts/script.js"></script>
+<script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

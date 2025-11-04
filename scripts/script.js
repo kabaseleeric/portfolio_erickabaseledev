@@ -1,6 +1,6 @@
 // *********** menus toggles *********** //
 
-let toggleMenus = document.getElementById("toggle")
+/*let toggleMenus = document.getElementById("toggle")
 let dropdown = document.querySelector(".banner .nav-bar .dropdown")
 dropdown.style.display = "none"
 
@@ -21,7 +21,7 @@ closeToggle.addEventListener("click", ()=>{
     }
 })
 
-//**************************** end menus toggle **************************//
+//**************************** end menus toggle **************************/
 
 //****************** scroll widget *********************//
 
@@ -62,21 +62,5 @@ btnReadmore.addEventListener("click", () =>{
     }
 })
 
-//********************** see more description about to realisations ***********************//
-//****************************************************************************************//
 
-let seeMore = document.querySelectorAll(".realisations .content-reals .child-content-real .see-more")
-seeMore.style.display = "none"
-let btnSeemore = document.querySelectorAll(".realisations .content-reals .child-content-real .btn-seemore")
-btnSeemore.innerText="...voir plus"
-
-btnSeemore.addEventListener("click", ()=>{
-    if(seeMore.style.display ==="none"){
-        seeMore.style.display ="inline"
-        btnSeemore.innerText = "voir moins"
-    }else{
-        seeMore.style.display = "none"
-        btnSeemore.innerText = "...voir plus"
-    }
-})
 
