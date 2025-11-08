@@ -1,66 +1,63 @@
-// *********** menus toggles *********** //
+// scripts/script.js — version corrigée et plus robuste
 
-/*let toggleMenus = document.getElementById("toggle")
-let dropdown = document.querySelector(".banner .nav-bar .dropdown")
-dropdown.style.display = "none"
+document.addEventListener('DOMContentLoaded', () => {
+  // *********** menus toggles ***********
+  // ...existing code (menu toggle commented out in original)...
+  // Si tu veux réactiver, encapsule-le et vérifie les éléments avant usage.
 
-let closeToggle = document.querySelector(".banner .nav-bar .dropdown .close")
+  // ****************** scroll widget *********************//
+  const scrollWidget = document.getElementById('scroll');
 
-toggleMenus.addEventListener("click",()=>{
+  if (scrollWidget) {
+    // Utiliser hidden ou une classe CSS est préférable à style.display inline
+    scrollWidget.hidden = true;
 
-    if(dropdown.style.display=== "none"){
-        dropdown.style.display = "inline"
-        toggleMenus.style.display = "none"
-    }
-})
+    // Ajout du listener click UNE SEULE FOIS
+    scrollWidget.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
 
-closeToggle.addEventListener("click", ()=>{
-    if(dropdown.style.display === "inline"){
-        dropdown.style.display="none"
-        toggleMenus.style.display="inline"
-    }
-})
+    // Handler de scroll léger ; passive pour perf
+    window.addEventListener('scroll', () => {
+      const shouldShow = window.scrollY > 50;
+      // Ne changer le DOM que si l'état change (évite réflows inutiles)
+      if (shouldShow && scrollWidget.hidden) {
+        scrollWidget.hidden = false;
+      } else if (!shouldShow && !scrollWidget.hidden) {
+        scrollWidget.hidden = true;
+      }
+    }, { passive: true });
+  } else {
+    // Débogage utile en dev
+    // console.warn('scroll widget (id="scroll") introuvable.');
+  }
 
-//**************************** end menus toggle **************************/
+  // ****************** readmore *********************//
+  const readMore = document.getElementById('readmore');
+  const btnReadmore = document.getElementById('btn-readmore');
 
-//****************** scroll widget *********************//
+  if (readMore && btnReadmore) {
+    // Utiliser hidden pour accessibilité + évite conflits de style
+    readMore.hidden = true;
+    btnReadmore.textContent = 'lire plus';
+    btnReadmore.style.fontWeight = '600';
+    btnReadmore.style.cursor = 'pointer';
+    btnReadmore.setAttribute('role', 'button');
+    btnReadmore.setAttribute('aria-expanded', 'false');
 
-window.addEventListener("scroll", ()=>{
-    let scrollWidget = document.getElementById("scroll")
-    scrollWidget.style.display ="none"
+    btnReadmore.addEventListener('click', () => {
+      const expanded = readMore.hidden === true;
+      readMore.hidden = !expanded;
+      btnReadmore.textContent = expanded ? 'lire moins' : 'lire plus';
+      btnReadmore.setAttribute('aria-expanded', String(expanded));
+    });
+  } else {
+    // console.warn('readmore or btn-readmore introuvable.');
+  }
 
-    if(window.scrollY > 50 && scrollWidget.style.display ==="none"){
-        scrollWidget.style.display="inline"
-    }
-
-    scrollWidget.addEventListener("click", ()=>{
-        window.scrollTo({
-            top:0,
-            behavior:"smooth"
-        })
-    })
-})
-
-//****************** end scroll widget *********************//
-
-//****************** readmore *********************//
-
-let readMore = document.getElementById("readmore")
-readMore.style.display="none"
-let btnReadmore = document.getElementById("btn-readmore")
-btnReadmore.innerText = "lire plus"
-btnReadmore.style.fontWeight="600"
-btnReadmore.style.cursor="pointer"
-
-btnReadmore.addEventListener("click", () =>{
-    if(readMore.style.display === "none"){
-        readMore.style.display="inline"
-        btnReadmore.innerText = "lire moins"
-    }else{
-        readMore.style.display="none"
-        btnReadmore.innerText = "lire plus"
-    }
-})
-
-
-
+  // *********** autres comportements JS (si besoin) ***********
+  // Place ici d'autres initialisations en vérifiant l'existence des éléments.
+});
