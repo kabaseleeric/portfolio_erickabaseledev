@@ -179,12 +179,12 @@ body{
 }
 
 .about .infos ul li i{
-    color: #000;
+    color: var(--color-tertiary);
     font-style: normal;
     font-weight: 500;
 }
 
-.about .infos ul li i a{
+.about .infos ul li a{
     color: var(--color-tertiary);
 }
 
@@ -407,9 +407,6 @@ body{
     font-weight: 700;
 }
 
-.footer .social-media{
-   
-}
 
 .footer .social-media ul{
     list-style: none;
