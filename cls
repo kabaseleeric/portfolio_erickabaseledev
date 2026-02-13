@@ -123,3 +123,4 @@ Author: Kabasele <erickabasele03@gmail.com>
 Date:   Thu Oct 30 07:16:44 2025 +0100
 
     premier commit du projet
+prochainement je mettrais les images et optimiserais les alts de toutes les images.
